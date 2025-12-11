@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # alfa-project
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -40,3 +41,6 @@ npm run dev
 ```sh
 npm run build
 ```
+=======
+# Alphabet
+>>>>>>> d69e4f32a850f8ee5952d9d85b2726a510a0373a
