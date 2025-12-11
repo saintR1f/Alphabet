@@ -7,7 +7,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="mainText"><span>ALPHABET</span> - Изучай буквы и язык с нами!</div>
+  <div class="mainText"><span>ALPHA-BET</span> - Изучай буквы и мир ставок с нами!</div>
 </template>
 
 <style src="./header.scss" lang="scss"></style>

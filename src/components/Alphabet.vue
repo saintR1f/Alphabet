@@ -8,11 +8,12 @@
     >
       <h2>{{ item.letter.toUpperCase() }}</h2>
       <textarea
+        :readonly="!item.isActive"
+        id="textform"
         @keydown.enter.prevent="handleEnter(item)"
+        @mouseleave.prevent="handleEnter(item)"
         v-model="item.content"
         placeholder="Введите слово на эту букву"
-        name=""
-        id=""
         rows="4"
       >
       </textarea>
@@ -44,13 +45,14 @@ export default defineComponent({
   },
   methods: {
     initializeAlphabet() {
-      const lettersStr: string = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+      const lettersStr: string = 'абвгдеёжзийклмнопрстуфхцчшщэюя'
       this.letters = lettersStr.split('').map((letter, index) => ({
         id: index + 1,
         letter: letter,
         isActive: true,
       }))
     },
+
     checkWordsFirstLetters(content: string, letter: string) {
       var words: string[]
       var wordIndex = 1
@@ -69,6 +71,7 @@ export default defineComponent({
         }
       }
     },
+
     handleEnter(item: ILetter) {
       if (item.content) {
         console.log('fuck')
