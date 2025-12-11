@@ -1,0 +1,41 @@
+.grid-list {
+  width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  padding: 20px;
+  padding-top: 10px;
+  margin: auto;
+}
+
+.grid-letter {
+  padding-top: 3px;
+  display: flex;
+  flex-direction: column;
+  background-color: #a84343dc;
+  border-radius: 8px;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(64, 64, 64, 0.1);
+  }
+
+  h2 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    color: #343434;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  textarea {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+  }
+}
+.passive {
+  opacity: 0.7;
+  background-color: rgb(165, 241, 1);
+}

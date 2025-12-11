@@ -1,15 +1,13 @@
 <script lang="ts">
-import {defineComponent} from 'vue'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: "Header"
+  name: 'Header',
 })
 </script>
 
 <template>
-
+  <div class="mainText"><span>ALPHABET</span> - Изучай буквы и язык с нами!</div>
 </template>
 
-<style scoped>
-
-</style>
+<style src="./header.scss" lang="scss"></style>
