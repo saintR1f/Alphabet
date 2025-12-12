@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
   const base = env.VITE_DEPLOY_ENV === "GH_PAGES" ? "/Alphabet/" : "/";
 
   return {
-    base,
+    base: '/',
     plugins: [vue()],
     resolve: {
       alias: {
